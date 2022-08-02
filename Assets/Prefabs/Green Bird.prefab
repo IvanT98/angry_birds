@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3033313643740702504}
   - component: {fileID: 3033313643740702503}
   - component: {fileID: 3033313643740702500}
+  - component: {fileID: 4125004857904159554}
   m_Layer: 0
   m_Name: Green Bird
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d469b1791d8e29a49ba58c962d86345d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -301,3 +302,15 @@ PolygonCollider2D:
       - {x: -0.55, y: -2.78}
       - {x: -0.42999998, y: -2.53}
       - {x: -0.29, y: -2.56}
+--- !u!114 &4125004857904159554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3033313643740702507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddff3588ab278b74eb98aabb72e70974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

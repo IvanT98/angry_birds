@@ -316,10 +316,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMultiplier: 250
-  minBoundX: -10
-  maxBoundX: 10
+  minBoundX: -20
+  maxBoundX: 20
   minBoundY: -10
-  maxBoundY: 10
+  maxBoundY: 20
   maxTimeSittingAround: 3
 --- !u!120 &5832590178065142088
 LineRenderer:

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8077044627771004932}
   - component: {fileID: 416482413572040380}
   - component: {fileID: 3133436652229547910}
+  - component: {fileID: 4660584679989144562}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -186,3 +187,15 @@ PolygonCollider2D:
       - {x: -0.31, y: -1.265}
       - {x: -0.29, y: -1.145}
       - {x: 0.22999999, y: -1.185}
+--- !u!114 &4660584679989144562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077044627771004955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ebdaa37e57602e409e172bff2d97c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

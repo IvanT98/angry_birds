@@ -28,8 +28,10 @@ public class Enemy : MonoBehaviour
         }
 
         var enemyPosition = transform.position;
-
-        Instantiate(onDestroyParticles, enemyPosition, Quaternion.identity);
+        var deathParticles = Instantiate(onDestroyParticles, enemyPosition, Quaternion.identity);
+        
         Destroy(gameObject);
+        // TODO: Wait for particles to play before destroying them.
+        Destroy(deathParticles);
     }
 }

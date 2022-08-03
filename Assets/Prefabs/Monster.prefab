@@ -199,3 +199,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ebdaa37e57602e409e172bff2d97c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onDestroyParticles: {fileID: 5367555474987112205, guid: 2ac5e521ce75a1a409873a425ff151ef, type: 3}

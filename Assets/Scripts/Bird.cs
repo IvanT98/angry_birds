@@ -6,6 +6,7 @@ public class Bird : MonoBehaviour
     private Vector3 _initialPosition;
     private bool _wasLaunched;
     private Rigidbody2D _rigidbody2D;
+    private LineRenderer _lineRenderer;
     private float _timeSittingAround;
     
     [SerializeField] private float forceMultiplier = 500;
@@ -23,16 +24,21 @@ public class Bird : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _lineRenderer = GetComponent<LineRenderer>();
     }
 
     private void Update()
     {
+        _lineRenderer.SetPosition(1, _initialPosition);
+        
         if (_wasLaunched && _rigidbody2D.velocity.magnitude <= 0.1)
         {
             _timeSittingAround += Time.deltaTime;
         }
 
         var currentPosition = transform.position;
+        
+        _lineRenderer.SetPosition(0, currentPosition);
 
         if (!(currentPosition.y > maxBoundY) && !(currentPosition.y < minBoundY) && !(currentPosition.x > maxBoundX) &&
             !(currentPosition.x < minBoundX) && !(_timeSittingAround > maxTimeSittingAround)) return;
@@ -56,6 +62,9 @@ public class Bird : MonoBehaviour
         var newPosition = mainCamera.ScreenToWorldPoint(mousePosition);
 
         transform.position = new Vector3(newPosition.x, newPosition.y, 0);
+        _wasLaunched = false;
+        _timeSittingAround = 0;
+        _lineRenderer.enabled = true;
     }
 
     private void OnMouseUp()
@@ -66,5 +75,6 @@ public class Bird : MonoBehaviour
         _rigidbody2D.AddForce(direction * forceMultiplier);
         _rigidbody2D.gravityScale = 1;
         _wasLaunched = true;
+        _lineRenderer.enabled = false;
     }
 }

@@ -12,4 +12,5 @@ The player controls the slingshot by holding the left mouse button near the bird
 The camera effect was made by using the Cinemachine Unity Package.
 
 [Unity Play](https://play.unity.com/mg/other/webgl-builds-363169)
+
 [How to Make a Game - Unity Beginner Tutorial](https://youtu.be/OR0e-1UBEOU)
